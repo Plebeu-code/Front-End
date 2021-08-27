@@ -2,7 +2,7 @@
 
 <h1 align="center">Algumas telas para vocês</h1>
 
-## Em breve mais projetos no front-end
+<p align="center">Em breve mais projetos no front-end</p>
 
 <h1 align="center">
     <a href="https://discord.gg/kzdkuPUA7v">🔗 Discord</a>
