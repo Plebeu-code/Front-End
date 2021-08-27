@@ -18,7 +18,7 @@
 
 - <h3>Scroll_Home<h3/>
 
-![](https://cdn.discordapp.com/attachments/858906660691902474/880695729658662933/ekJVDlxGf5.gif)
+![](https://cdn.discordapp.com/attachments/858906660691902474/880703600790216714/g1ZnLJMxSc.gif)
 
 - <h3>Home_VR<h3/>
 
@@ -27,7 +27,6 @@
 - <h3>Home_Bag<h3/>
 
 ![](https://cdn.discordapp.com/attachments/858906660691902474/880697032237522954/kSElHxwmxM.gif)
-<<<<<<< HEAD
 
 - <h3>Teclado<h3/>
 
