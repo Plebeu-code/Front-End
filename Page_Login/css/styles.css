@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,700;1,700&family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+
+:root {
+    --text-color: hsla(210, 50%, 85%, 1);
+    --shadow-color: hsla(210, 40%, 52%, .4);
+    --btn-color: hsl(210, 57%, 32%);
+    --bg-color: #141218;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(132, 233, 233);
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Yomogi', cursive;
+}
+
+p {
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(119, 15, 15);
+}
+
+span {
+    font-family: 'Otomanopee One', sans-serif;
+    color: rgb(119, 15, 15);
+}
+
+.box {
+    cursor: pointer;
+    display: flex;
+    width: 900px;
+    height: 450px;
+    flex-direction: row;
+    border-radius: 11px;
+    background: no-repeat url('https://cdn.discordapp.com/attachments/745824062890311761/863585759952109588/bringing-web-pages-to-life-css-animations.png');
+    background-size: cover;
+}
+
+.boxlogin {
+    width: 50%;
+}
+
+.loginHeader {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+form {
+    height: 60%;
+}
+
+/*! Input login e register */
+
+.inputLogin {
+    display: flex;
+    height: 55%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.input1 {
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 0px 30px 30px 0px;
+    outline: none;
+    
+    box-shadow: 30px;
+    box-shadow: 3em 0.1em 3em   rgb(46, 46, 45);
+}
+
+.input2 {
+    width: 100%;
+    height: 40px;
+
+    font-size: 17px;
+    margin-bottom: 20px;
+    
+    box-shadow: 30px;
+    border: none;
+    outline: none;
+    box-shadow: 3em 0.1em 3em   rgb(46, 46, 45);
+}
+
+.iconsput {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.iconsput2 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+#hiddenty {
+    width: 35px;
+    height: 40px;
+    background-color: white;
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+}
+
+/*! Icons */
+
+.fa-envelope-o {
+    display: flex;
+    justify-content: center;
+    
+    background-color: rgb(255, 255, 255);
+    color: #f06d65;
+    
+    padding: 10px 0;
+    width: 35px;
+    height: 40px;
+    font-size: 20px;
+    
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0.1em 0.1em 1.8em  rgb(46, 46, 45);
+}
+
+.fa-lock {
+    display: flex;
+    background-color: white;
+    color: #f06d65;
+
+    justify-content: center;
+    align-items: center;
+    
+    padding: 10px 0;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0.1em 0.1em 1.8em  rgb(46, 46, 45);
+}
+
+.fa-eye-slash {
+    display: flex;
+    background-color: white;
+    color: #f06d65;
+
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    
+    width: 35px;
+    height: 40px;
+    
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: 1em 0 1em  rgba(46, 46, 45, 0.596);
+
+}
+
+.esqueci {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+#space {
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+@keyframes cartinha {
+    0% {
+        color: black;
+    }
+    25% {
+        color: rgb(102, 92, 255);
+    }
+    50% {
+        color: #ffffff;
+    }
+    75% {
+        color: #65c9f0;
+        left: 0px;
+    }
+    100% {
+        color: rgb(0, 207, 86);
+    }
+}
+
+.cartinha {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 50%;
+    
+    animation-name: cartinha;
+    animation-duration: 20s;
+    position: relative;
+    
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+}
+
+.cartinha p {
+    max-width: 90%;
+}
+
+#chkedy {
+    color: #f06d65;
+}
+.btnLogin {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnLogin input {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(90deg, rgb(157, 66, 61) 24%, rgb(245, 134, 128) 100%);
+}
+
+.seregistre {
+    text-align: right;
+    margin-right: 20px;
+}
+
+/*! Background */
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.6;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+/*! Button entrar */
+
+
+.btnanime {
+    position:relative;
+    padding: 10px 20px;  
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    font-family: "Source Code Pro";
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 15px;  
+    color: var(--text-color);
+    
+    background-color: var(--btn-color);
+    box-shadow: var(--shadow-color) 2px 2px 22px;
+    border-radius: 4px; 
+    z-index: 0;  
+    overflow: hidden;   
+  }
+  
+  .btnanime:focus {
+    outline-color: transparent;
+    box-shadow: var(--btn-color) 2px 2px 22px;
+  }
+  
+  .right::after, .btnanime::after {
+    content: var(--content);
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    padding: 40px 40px;
+    pointer-events:none;
+  }
+  
+  .btnanime::after{
+    font-weight: 200;
+    top: -30px;
+    left: -20px;
+  } 
+  
+  .right, .left {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+  .right {
+    left: 66%;
+  }
+  .left {
+    right: 66%;
+  }
+  .right::after {
+    top: -30px;
+    left: calc(-66% - 20px);
+    
+    background-color: var(--bg-color);
+    color:transparent;
+    transition: transform .4s ease-out;
+    transform: translate(0, -90%) rotate(0deg)
+  }
+  
+  .btnanime:hover .right::after {
+    transform: translate(0, -47%) rotate(0deg)
+  }
+  
+  .btnanime .right:hover::after {
+    transform: translate(0, -50%) rotate(-7deg)
+  }
+  
+  .btnanime .left:hover ~ .right::after {
+    transform: translate(0, -50%) rotate(7deg)
+  }
+  
+  /* bubbles */
+  .btnanime::before {
+    content: '';
+    pointer-events: none;
+    opacity: .6;
+    background:
+      radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+      radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+      radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+  
+    width: 100%;
+    height: 300%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    animation: bubbles 5s linear infinite both;
+  }
+  
+  @keyframes bubbles {
+    from {
+      transform: translate();
+    }
+    to {
+      transform: translate(0, -66.666%);
+    }
+  }

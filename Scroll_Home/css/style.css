@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    /*! Estudar scroll*/
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-bg-azul: #7597de;
+    --color-bg-roxo: #2b1055;
+    --color-tx-roxo: #2b1055;
+    --color-background: #1c0522;
+    --color-text-white: #fff;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(var(--color-bg-roxo), var(--color-bg-azul));
+    /*! Estudar overflow*/
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, var(--color-bg-azul));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, var(--color-bg-roxo));
+}
+
+header {
+    /*! Estudar position*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.875em 6.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo {
+    color: var(--color-text-white);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    padding: 6px 15px;
+    color: var(--color-text-white);
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+    background-color: var(--color-text-white);
+    color: var(--color-tx-roxo);
+}
+
+section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 6.25em;
+    display: flex;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*! Estudar before*/
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 6.25em;
+    z-index: 1000;
+    background: linear-gradient(to top, #1c0522, transparent);
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /*! Estudar object*/
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon {
+    /*! Estudar blend*/
+    mix-blend-mode: screen;
+}
+
+section img#stars {
+    height: 100vh;
+}
+
+section img#mountains_behind {
+    height: 100vh;
+}
+
+section img#mountains_front {
+    z-index: 10;
+    top: 0;
+    height: 100vh;
+}
+
+
+
+#text {
+    /* grid-column-start: 1; */
+    /* grid-row-start: 1; */
+    position: absolute;
+    right: -63%;
+    color: var(--color-text-white);
+    white-space: nowrap;
+    font-size: 6.5vw;
+    z-index: 9;
+}
+
+#btn {
+    /*! Estudar inline-block*/
+
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: var(--color-text-white);
+    color: var(--color-tx-roxo);
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(6.25em);
+}
+
+.sec {
+    position: relative;
+    /* padding: 6.25em; */
+    background: var(--color-background);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 6.25em;
+}
+
+@media only screen and (min-width: 1733px) {
+    .sec {
+      height: 100vh;
+    }
+}
+
+.sec h2 {
+    font-size: 3.5em;
+    margin-bottom: 0.625em;
+    color: var(--color-text-white);
+}
+
+.sec p {
+    font-size: 1em;
+    color: var(--color-text-white);
+    max-width: 60%;
+}

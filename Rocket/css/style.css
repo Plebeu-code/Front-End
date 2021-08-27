@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #01070a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container i {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.5);
+    animation: animateStarss linear infinite;
+}
+
+@keyframes animateStarss
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+    100%
+    {
+        transform: translateY(100vh);
+    }
+}
+
+.container .rocket {
+    position: relative;
+    animation: treme 0.2s ease infinite;
+    padding: 0px 100vw;
+}
+
+.container .rocket:hover{
+    position: relative;
+    animation: animate 10.2s ease infinite;
+}
+
+@keyframes treme 
+{
+    0%
+    {
+        transform: translateY(-2px);
+    }
+    50%
+    {
+        transform: translateY(-7px);
+    }
+}
+
+@keyframes animate 
+{
+    10%
+    {
+        transform: translateX(-100px);
+
+    }
+    25%
+    {
+        transform: translateX(100px);
+
+    }
+    50%
+    {
+        transform: rotate(-360deg);
+    }
+    75%
+    {
+        transform: translateY(-400px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fogo 
+{
+    0%
+    {
+        background: linear-gradient(#00d0ff, transparent);
+    }
+    25%
+    {
+        background: linear-gradient(#f63030, transparent);
+    }
+    50%
+    {
+        background: linear-gradient(#5729ee, transparent);
+    }
+    75%
+    {
+        background: linear-gradient(#a416f6, transparent);
+
+    }
+    100%
+    {
+        background: linear-gradient(#ff2ea8, transparent);
+    }
+}
+
+.container .rocket::before {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 200px;
+    /* background: linear-gradient(#00d0ff, transparent); */
+    animation: fogo 4.2s ease infinite;
+}
+
+.container .rocket::after {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 200px;
+    background: linear-gradient(#00d0ff, transparent);
+    filter: blur(20px);
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Trabalho</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="img/stars.png" id="stars">
+        <img src="img/moon.png" id="moon">
+        <img src="img/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Boa Noite meu bb</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" >
+        <h2 id="sec">Parallax Scrolling Effects</h2>
+        <p >A rolagem paralaxe é uma técnica de web design em que o plano de fundo do site se move mais lentamente do que o primeiro plano. 
+            Isso resulta em um efeito 3D conforme os visitantes percorrem o site,
+            adicionando uma sensação de profundidade e criando uma experiência de navegação mais envolvente.
+            A paralaxe é baseada na ilusão de ótica. O que parallax.js fará é criar um elemento de posição fixa para cada imagem de paralaxe no início do corpo do documento.
+            Este elemento de espelho ficará atrás dos outros elementos e corresponderá à posição e às dimensões de seu objeto de destino.
+            Devido à natureza dessa implementação, você deve garantir que esses objetos de paralaxe
+            e quaisquer camadas abaixo deles sejam transparentes para que você possa ver o efeito de paralaxe abaixo deles. Além disso, se não houver outro conteúdo neste elemento,
+            você precisará garantir que ele tenha algumas dimensões fixas, caso contrário, você não verá nada.<br><br> 
+            A rolagem paralaxe é uma técnica de web design em que o plano de fundo do site se move mais lentamente do que o primeiro plano. 
+            Isso resulta em um efeito 3D conforme os visitantes percorrem o site,
+            adicionando uma sensação de profundidade e criando uma experiência de navegação mais envolvente.<br><br>
+            A rolagem paralaxe é uma técnica de web design em que o plano de fundo do site se move mais lentamente do que o primeiro plano. 
+            Isso resulta em um efeito 3D conforme os visitantes percorrem o site,
+            adicionando uma sensação de profundidade e criando uma experiência de navegação mais envolvente.
+            A paralaxe é baseada na ilusão de ótica. O que parallax.js fará é criar um elemento de posição fixa para cada imagem de paralaxe no início do corpo do documento.
+            Este elemento de espelho ficará atrás dos outros elementos e corresponderá à posição e às dimensões de seu objeto de destino.
+            Devido à natureza dessa implementação, você deve garantir que esses objetos de paralaxe
+            e quaisquer camadas abaixo deles sejam transparentes para que você possa ver o efeito de paralaxe abaixo deles. Além disso, se não houver outro conteúdo neste elemento,
+            você precisará garantir que ele tenha algumas dimensões fixas, caso contrário, você não verá nada.
+            e quaisquer camadas abaixo deles sejam transparentes para que você possa ver o efeito de paralaxe abaixo deles. Além disso, se não houver outro conteúdo neste elemento,
+            você precisará garantir que ele tenha algumas dimensões fixas, caso contrário, você não verá nada.<br><br>
+        </p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars')
+        let moon = document.getElementById('moon')
+        let mountains_behind = document.getElementById('mountains_behind')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let mountains_front = document.getElementById('mountains_front')
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.transform = `translateX(${value * 0.25 + 'px'})`
+            moon.style.transform = `translateY(${value * 1.05 + 'px'})`
+            mountains_behind.style.transform = `translateY(${value * 0.5 + 'px'}`
+            text.style.transform = `translate(${value * -4 + 'px'}, ${value * 0.5 + 'px'})`
+
+    
+            btn.style.transform = `translateY(${value * 1.5 + 'px'})`
+            header.style.transform =  `translateY(${value * 0.5 + 'px'}`
+        })
+
+    </script>
+</body>
+</html>
