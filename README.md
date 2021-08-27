@@ -22,7 +22,7 @@
 
 - <h3>Home_VR<h3/>
 
-![](https://cdn.discordapp.com/attachments/858906660691902474/880696482934689822/XGUOEo2td4.mp4)
+![](https://cdn.discordapp.com/attachments/858906660691902474/880702782288576523/s721ZuhRzT.gif)
 
 - <h3>Home_Bag<h3/>
 
@@ -32,5 +32,3 @@
 - <h3>Teclado<h3/>
 
 ![](https://cdn.discordapp.com/attachments/858906660691902474/880701463649747054/yU7Bmnl783.gif)
-=======
->>>>>>> 6477a2d883a1a5b196d6d4a288e7e304d85849d2
