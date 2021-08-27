@@ -1,8 +1,8 @@
-![Axie Infinity](https://i.pinimg.com/originals/a9/8a/1f/a98a1fe05019c395040c7872f7a26be4.gif)
+![Artezinha](https://i.pinimg.com/originals/a9/8a/1f/a98a1fe05019c395040c7872f7a26be4.gif)
 
 <h1 align="center">Algumas telas para vocês</h1>
 
-## Em breve mais projetos no front-end
+<p align="center">Em breve mais projetos no front-end</p>
 
 <h1 align="center">
     <a href="https://discord.gg/kzdkuPUA7v">🔗 Discord</a>
@@ -27,7 +27,10 @@
 - <h3>Home_Bag<h3/>
 
 ![](https://cdn.discordapp.com/attachments/858906660691902474/880697032237522954/kSElHxwmxM.gif)
+<<<<<<< HEAD
 
 - <h3>Teclado<h3/>
 
 ![](https://cdn.discordapp.com/attachments/858906660691902474/880701463649747054/yU7Bmnl783.gif)
+=======
+>>>>>>> 6477a2d883a1a5b196d6d4a288e7e304d85849d2
